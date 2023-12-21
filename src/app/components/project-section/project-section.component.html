@@ -1,0 +1,22 @@
+<div class="flex flex-col  py-16  items-center  px-5  md:flex-row md:px-20 md:space-x-36"
+     [ngClass]="{'md:space-x-14 md:flex-row-reverse ': isLeft===true}">
+  <div class="space-y-6 items-center pb-8">
+    <div class="text-start space-y-3">
+      <h1 class="text-4xl font-inconsolata text-[#4fb7dc]">Project {{ number }}</h1>
+      <h2 class="text-4xl font-bold text-white">{{ title }}</h2>
+    </div>
+    <article class="text-xl text-gray-400 font-inconsolata">
+      {{ text }}
+    </article>
+  </div>
+  <div class="pl-14 md:pl-0 " [ngClass]="{'md:pr-20': isLeft===true}">
+    <div class="relative w-[250px] h-[200px]  md:w-[400px] md:h-[350px] flex items-center">
+      <div
+        class="absolute top-[40px] right-[40px] w-[250px] h-[200px] md:w-[400px] md:h-[350px] rounded-2xl border-[15px] border-[#4fb7dc]"></div>
+      <div
+        class="absolute w-[250px] h-[200px] md:w-[400px] md:h-[350px] rounded-2xl overflow-hidden transform hover:scale-110 transition-all duration-300">
+        <img class="w-full h-full object-cover " [ngSrc]="image!" alt="dating app" height="750" width="1000">
+      </div>
+    </div>
+  </div>
+</div>

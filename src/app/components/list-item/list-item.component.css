@@ -1,0 +1,23 @@
+
+
+.dot:before,
+.dot:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  filter: blur(0.5rem);
+}
+
+.dot:before {
+  background: linear-gradient(to right, #7dcdfe, #f052ff);
+  transform: translate(-0.3rem, -0.3rem);
+  opacity: 0.8;
+}
+
+.dot:after {
+  background: linear-gradient(to right, #f052ff, #7dcdfe);
+  transform: translate(0.3rem, 0.3rem);
+  opacity: 0.5;
+}
