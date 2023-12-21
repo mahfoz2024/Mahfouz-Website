@@ -1,0 +1,44 @@
+<nav class="bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="flex items-center">
+        <a [routerLink]="['/']">
+          <img class="h-24 w-60 object-cover" ngSrc="assets/images/MyLogo.png" alt="Mahfouz Khalil" height="2084"
+               width="3220">
+        </a>
+      </div>
+      <div class="hidden sm:flex ml-auto space-x-4">
+        <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-link"
+           class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">HOME</a>
+        <a routerLink="/portfolio" routerLinkActive="active-link"
+           class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">PORTFOLIO</a>
+        <a routerLink="/certifications" routerLinkActive="active-link"
+           class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">CERTIFICATIONS</a>
+        <button routerLink="/experience" routerLinkActive="active-link"
+                class="text-white bg-gradient-to-r from-blue-400 to-purple-800 rounded-md px-3 py-2 text-sm font-medium
+               hover:from-blue-600 hover:to-purple-900 transition-all duration-300">EXPERIENCE</button>
+
+      </div>
+      <div class="sm:hidden ml-auto">
+        <button type="button" (click)="toggleMobileMenu()"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <img class="w-5 h-5" alt="menu" ngSrc="assets/svg/menu.svg" height="16" width="16">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="sm:hidden" id="mobile-menu" [ngClass]="{'hidden': !isMobileMenuOpen}">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+         routerLinkActive="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+      >HOME</a>
+      <a routerLink="/portfolio" routerLinkActive="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">PORTFOLIO</a>
+      <a routerLink="/certifications" routerLinkActive="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">CERTIFICATIONS</a>
+      <a routerLink="/experience" routerLinkActive="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+         class="text-white bg-gradient-to-r from-blue-400 hover:from-blue-600 hover:to-purple-900 to-purple-800 transition-all duration-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium">EXPERIENCE</a>
+    </div>
+  </div>
+</nav>

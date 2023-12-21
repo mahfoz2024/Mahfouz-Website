@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+
+<section class="bg-gray-800 h-full md:h-[700px]">
+  <div
+    class="flex flex-col md:flex-row items-center justify-center pt-20 pb-10 space-y-10 md:space-y-0 space-x-0 md:space-x-20 px-4 md:px-24">
+    <!-- Personal Information Section -->
+    <app-personal-information></app-personal-information>
+    <!-- Introduction Section -->
+    <app-introduction></app-introduction>
+    <!-- Skills Section -->
+    <app-skills></app-skills>
+  </div>
+</section>
+
+<section
+  class="relative flex flex-col md:flex-row items-center pb-10 space-x-10 justify-center h-full md:h-full bg-cover bg-center"
+  [ngStyle]="{'background-image': 'url(assets/images/77851.jpg)'}">
+  <div class="absolute inset-0 bg-black bg-opacity-50 mix-blend-multiply"></div>
+  <div class="space-y-16 z-10 pr-10 md:pr-0">
+    <div class="bg-gray-800 mt-12 md:pt-0 rounded-tl-2xl w-[310px] border-cyan-600 border-2 rounded-br-2xl shadow-lg">
+      <h1 class="text-6xl text-white p-4">About Me</h1>
+    </div>
+    <div class="bg-gray-800 w-full md:w-[750px] rounded-2xl shadow-lg">
+      <div class="p-4">
+        <code class="text-[#6eada8] font-inconsolata">&lt;p&gt;</code>
+        <h1 class="text-4xl text-cyan-400 font-inconsolata">Hello Tech Enthusiasts!</h1>
+        <p class="text-white py-2 font-inconsolata">I'm Mahfouz Khalil, a Full-Stack Maestro situated in the vibrant tech hub of UAE-Dubai. My playground includes the mastery of <span class="text-cyan-600">ASP.NET Core</span>, <span class="text-cyan-600">Angular</span>, and <span class="text-cyan-600">Flutter</span>, where I orchestrate symphonies of innovation.</p>
+        <p class="text-white pb-2 font-inconsolata">With half a decade immersed in the realms of ASP.Net Core, I'm your go-to artisan for crafting web experiences that transcend the ordinary. Fluent in the languages of C#, HTML5, CSS3, and JavaScript, I sculpt solutions that not only meet expectations but dance beyond them.</p>
+        <p class="text-white pb-2 font-inconsolata">My expertise shines brightest in ASP.Net Core, where I've delved into the intricacies of backend development, weaving together seamless web applications. The frontend canvas sees my brushstrokes with Angular, creating dynamic and responsive user interfaces that captivate.</p>
+        <p class="text-white pb-2 font-inconsolata">Flutter, my digital wand, allows me to conjure enchanting mobile applications that blend beauty and functionality. It's a realm where creativity meets practicality, and I thrive in pushing the boundaries of what's possible.</p>
+        <p class="text-white pb-2 font-inconsolata">And let's not forget the nostalgia of WPF, where I've carved out spaces of elegance and efficiency in user interfaces. It's a testament to my versatility, seamlessly transitioning between the modern and the classic.</p>
+        <p class="text-white pb-2 font-inconsolata">Beyond the code, I'm an explorer of ideas, a wordsmith in blogs, and a visual storyteller through the lens of a camera. I'm not just committed to staying ahead in tech; I'm here to redefine what's possible.</p>
+        <p class="text-white pb-2 font-inconsolata">Let's connect and embark on a journey of innovation! Reach me at mahfozkhalil1999@gmail.com or find me on LinkedIn: <a href="https://www.linkedin.com/in/mahfouz-khalil-34027921a" class="text-cyan-600">mahfouz-khalil-34027921a</a>.</p>
+        <code class="text-[#6eada8]">&lt;/p&gt;</code>
+      </div>
+
+    </div>
+  </div>
+  <img
+    class="w-[500px] h-96 mt-32 object-cover hidden sm:block rounded-2xl z-10 transform hover:scale-105 transition-all duration-300"
+    ngSrc="assets/images/mahfouz.jpg" alt="mahfouz" height="3725" width="5586">
+</section>
+
+<section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-gray-800 h-full">
+  <h1
+    class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+    Services</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 max-w-6xl mx-auto">
+    <app-service-card title="Mobile App Development" icon="assets/svg/mobile.svg"
+                      [body]="data?.Service1"></app-service-card>
+    <app-service-card title="Web Development" icon="assets/svg/world.svg" [body]="data?.Service2"></app-service-card>
+    <app-service-card title="Desktop App Development" icon="assets/svg/desktop.svg"
+                      [body]="data?.Service3"></app-service-card>
+    <app-service-card title="Search Engine Optimization" icon="assets/svg/seo.svg"
+                      [body]="data?.Service4"></app-service-card>
+  </div>
+</section>
+<section class="py-8 md:py-12 lg:py-16 xl:py-20 bg-gray-800 h-full">
+  <h1
+    class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white text-center mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+    EXPERIENCE</h1>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16 xl:gap-20 max-w-6xl mx-auto">
+    <app-language-card name="JavaScript" image="assets/svg/javascript.svg"></app-language-card>
+    <app-language-card name="TypeScript" image="assets/svg/typescript.svg"></app-language-card>
+    <app-language-card name="Python" image="assets/svg/python.svg"></app-language-card>
+    <app-language-card name="Angular" image="assets/svg/angular-icon.svg"></app-language-card>
+    <app-language-card name=".Net Core" image="assets/svg/dot-net-core-7.svg"></app-language-card>
+    <app-language-card name="Flutter" image="assets/svg/flutter.svg"></app-language-card>
+    <app-language-card name="HTML" image="assets/svg/html-1.svg"></app-language-card>
+    <app-language-card name="CSS" image="assets/svg/css-3.svg"></app-language-card>
+    <app-language-card name="Tailwind CSS" image="assets/svg/tailwindcss.svg"></app-language-card>
+    <app-language-card name="AWS" image="assets/svg/aws-2.svg"></app-language-card>
+    <app-language-card name="Azure" image="assets/svg/azure-2.svg"></app-language-card>
+    <app-language-card name="Docker" image="assets/svg/docker.svg"></app-language-card>
+  </div>
+</section>
+<app-footer></app-footer>
+
+
+

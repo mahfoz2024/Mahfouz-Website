@@ -1,0 +1,39 @@
+<section
+  class="ring-4 ring-white ring-offset-2 ring-offset-purple-700 flex  flex-col border-2 rounded-2xl w-[380px]  md:w-[300px]  justify-center items-center shadow-2xl p-4">
+  <img
+    class="w-24 h-24 object-cover rounded-full ring-4 ring-white transform hover:scale-110 transition-all duration-300 ring-offset-2 ring-offset-blue-500"
+    ngSrc="assets/images/mahfouz1.jpg" alt="mahfoz" height="1454" width="2001">
+  <h1 class="text-2xl pt-2 text-white text-shadow text-center">Mahfouz Khalil</h1>
+  <h2 class="text-xs text-white font-light text-shadow text-center">Full Stack Developer</h2>
+  <div class="pt-4 space-y-2 shadow-inner">
+    <div class="flex items-center space-x-1.5">
+      <img class="w-5 h-5 object-fill" ngSrc="assets/svg/email.svg" alt="email" height="16" width="16">
+      <p class="text-white font-light hover:underline text-shadow">mahfozkhalil1999@gmail.com</p>
+    </div>
+    <div class="flex items-center space-x-1.5">
+      <img class="w-5 h-5 object-fill" ngSrc="assets/svg/job.svg" alt="email" height="16" width="16">
+      <p class="text-white font-light hover:underline text-shadow">Full-Time / Freelancer</p>
+    </div>
+    <div class="flex items-center space-x-1.5">
+      <img class="w-5 h-5 object-fill" ngSrc="assets/svg/location.svg" alt="email" height="16" width="16">
+      <p class="text-white font-light hover:underline text-shadow">UAE - Dubai</p>
+    </div>
+    <div class="flex items-center space-x-1.5">
+      <img class="w-5 h-5 object-fill" ngSrc="assets/svg/phone.svg" alt="email" height="16" width="16">
+      <p class="text-white font-light hover:underline text-shadow">+971 56 358 8398</p>
+    </div>
+  </div>
+  <!-- Social Media Links -->
+  <div class="flex space-x-2 py-4 items-center justify-center">
+    <a href="https://github.com/mahfoz2024"><img class="w-8 h-8 transform hover:scale-110 transition-all duration-300" ngSrc="assets/svg/github.svg"
+                 alt="github" height="64" width="64"></a>
+    <a href="https://www.linkedin.com/in/mahfouz-khalil-34027921a"><img class="w-8 h-8 transform hover:scale-110 transition-all duration-300" ngSrc="assets/svg/linkedin.svg"
+                 alt="linkedin" height="64" width="64"></a>
+  </div>
+  <!-- Download CV Button -->
+  <button
+    class="flex items-center justify-center transform hover:scale-110 transition-all duration-300 bg-amber-50 rounded-2xl h-10 w-32 mt-4" (click)="downloadCV()">
+    <span class="mr-1">Download CV</span>
+    <img class="w-5 h-5 object-fill" ngSrc="assets/svg/download.svg" alt="download" height="16" width="16">
+  </button>
+</section>

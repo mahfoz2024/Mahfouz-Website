@@ -1,0 +1,57 @@
+<footer class="w-full h-[1080px] md:h-[980px] pt-20 bg-gray-800">
+  <div class="flex flex-col justify-start items-center py-10 px-4  sm:px-20 w-full h-[1080px] md:h-[980px] bg-gray-900 rounded-t-[60px]">
+    <div class="space-y-8 justify-center items-center divide-cyan-400 divide-y-2">
+      <h1 class="text-cyan-400 font-inconsolata font-bold text-4xl sm:text-5xl text-center">Contact</h1>
+      <p class="text-center pt-8 font-inconsolata text-gray-400 text-sm sm:text-base">I`m Currently available for freelance and full time work</p>
+    </div>
+    <h1
+      class="rounded-tl-2xl rounded-br-2xl font-inconsolata border-2 border-cyan-400 text-cyan-400 mt-20 p-2 text-2xl sm:text-3xl">
+      Send Me A Message</h1>
+    <!-- Contact Form -->
+    <form action="https://formsubmit.co/mahfozkhalil1999@gmail.com" method="POST" class="mt-8 w-full max-w-md pb-3 ">
+      <div class="grid grid-cols-1 gap-6">
+        <!-- Sender's Name -->
+        <div>
+          <label for="name" class="text-cyan-400 text-sm font-inconsolata">Your Name</label>
+          <input id="name" type="text" name="name"
+                 class="mt-1 p-2 w-full text-gray-400 border-b-2 bg-gray-900 border-cyan-400 focus:outline-none focus:border-cyan-400"
+                 placeholder="John Doe" required>
+        </div>
+
+        <!-- Sender's Email -->
+        <div>
+          <label for="email" class="text-cyan-400 text-sm font-inconsolata">Your Email</label>
+          <input id="email" type="email" name="email"
+                 class="mt-1 p-2 w-full bg-gray-900 text-gray-400 border-b-2 border-cyan-400 focus:outline-none focus:border-cyan-400"
+                 placeholder="john.doe@example.com" required>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="text-cyan-400 text-sm font-inconsolata">Your Message</label>
+          <textarea id="message" rows="4" name="message"
+                    class="mt-1 p-2 w-full bg-gray-900 text-gray-400 border-b-2 border-cyan-400 focus:outline-none focus:border-cyan-400"
+                    placeholder="Type your message here" required></textarea>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mt-6 ">
+        <button type="submit" class="px-4 py-2 bg-cyan-400 text-gray-900 rounded-full focus:outline-none">Send Message
+        </button>
+      </div>
+    </form>
+    <hr class="border-t-1 w-full mt-32  border-cyan-400">
+    <div class="relative flex w-full md:flex-row flex-col justify-between items-center">
+      <img class="h-24 w-60 object-cover" ngSrc="assets/images/MyLogo.png" alt="Mahfouz Khalil" height="2084"
+           width="3220">
+      <p class="text-l text-white font-inconsolata text-xs sm:text-base">2024 - Mahfouz Khalil, All right reserved</p>
+      <div class="flex space-x-2 py-4 items-center justify-center">
+        <a href="https://github.com/mahfoz2024"><img class="w-8 h-8 transform hover:scale-110 transition-all duration-300" ngSrc="assets/svg/github.svg"
+                     alt="github" height="64" width="64"></a>
+        <a href="https://www.linkedin.com/in/mahfouz-khalil-34027921a"><img class="w-8 h-8 transform hover:scale-110 transition-all duration-300" ngSrc="assets/svg/linkedin.svg"
+                     alt="linkedin" height="64" width="64"></a>
+      </div>
+    </div>
+  </div>
+</footer>
