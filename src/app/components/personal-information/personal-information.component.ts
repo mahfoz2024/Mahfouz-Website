@@ -11,14 +11,13 @@ export class PersonalInformationComponent {
   constructor(private http: HttpClient) {}
   downloadCV() {
     const cvUrl = environment.cvFilePath;
-
     this.http.get(cvUrl, { responseType: 'blob' })
       .subscribe((data: any) => {
         const blob = new Blob([data], { type: 'application/pdf' });
         const downloadLink = document.createElement('a');
 
         downloadLink.href = window.URL.createObjectURL(blob);
-        downloadLink.download = 'your_cv_filename.pdf';
+        downloadLink.download = 'MahfouzCV.pdf';
 
         document.body.appendChild(downloadLink);
         downloadLink.click();
